@@ -30,7 +30,7 @@ const Feed = () => {
     const response = await fetch("/api/prompt", { next: { revalidate: 1 } });
     const data = await response.json();
 
-    alert(Object.keys(data).length);
+    //alert(Object.keys(data).length);
     setAllPosts(data);
   };
 
